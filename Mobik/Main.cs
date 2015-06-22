@@ -20,9 +20,15 @@ namespace Mobik
             Tools t = new Tools();
             t.Show(dockPanel1, DockState.DockLeft);
             designer f3 = new designer();
-            f3.Show(dockPanel1, DockState.DockRight);
+            f3.Show(dockPanel1, DockState.Document);
             Editor f4 = new Editor();
             f4.Show(dockPanel1, DockState.Document);
+            Project f5 = new Project();
+            f5.Show(dockPanel1, DockState.DockRight);
+            Panels.Properties f6 = new Panels.Properties();
+            f6.Show(dockPanel1, DockState.DockRight);
+            Panels.Command f7 = new Panels.Command();
+            f7.Show(dockPanel1, DockState.DockBottom);
         }
 
         private void Main_Load(object sender, EventArgs e)
