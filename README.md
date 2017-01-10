@@ -1,3 +1,3 @@
-# Yukoni --Project Template / BoilerPlate
-ReactJS, Redux, Node, ExpressJS, MongoDB, Webpack
+# Yukoni --Project Template / Boiler Plate
+ReactJS, Redux, Material-ui, Node, ExpressJS, MongoDB, Webpack
 
