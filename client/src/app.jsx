@@ -1,4 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import HomePage from './components/HomePage.jsx';
 
-ReactDom.render(<p> Ecommerce Plateform</p>, document.getElementById('youkoni-app'));
+
+
+ReactDom.render(<HomePage/>, document.getElementById('youkoni-app'));
