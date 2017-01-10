@@ -1,4 +1,3 @@
 # Yukoni
-OPEN-SOURCE & FREE
-e-commerce solution
-
+ReactJS,Redux,Node,ExpressJS,MongoDB,Webpack
+# Project Template / BoilerPlate
