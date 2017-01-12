@@ -1,15 +1,25 @@
 import Base from './components/Base.jsx';
 import HomePage from './components/HomePage.jsx';
-import LoginPage from './components/LoginForm.jsx';
-import SignupPage from './components/SignUpForm.jsx';
+import LoginPage from './containers/LoginPage.jsx';
+import SignUpPage from './containers/SignUpPage.jsx';
 
-const routes={
-         componen:Base,
-         childRoutes:[
-                        {path:'/', component:HomePage},
-                        {path:'/login', component:LoginPage},
-                        {path:'/signup',component:SignupPage}
-                     ]
+const routes = {
+    // base component (wrapper for the whole application).
+    component: Base,
+    childRoutes: [
 
+        {
+            path: '/',
+            component: HomePage
+        }, {
+            path: '/login',
+            component: LoginPage
+        }, {
+            path: '/signup',
+            component: SignUpPage
+        }
+
+    ]
 };
+
 export default routes;

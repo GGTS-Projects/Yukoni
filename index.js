@@ -9,8 +9,8 @@ app.use(express.static('./client/dist/'));
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // routes
-// const authRoutes = require('./server/routes/auth');
-// app.use('/auth', authRoutes);
+ const authRoutes = require('./server/routes/auth');
+ app.use('/auth', authRoutes);
 
 // start the server
 app.listen(3000, () => {
