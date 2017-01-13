@@ -3,7 +3,7 @@ import {Link, IndexLink} from 'react-router';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-const Base = ({children}) => (
+const Base = ({ children }) => (
     <div>
         <div className="top-bar">
             <div className="top-bar-left">
