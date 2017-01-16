@@ -1,7 +1,7 @@
 {
   "name": "Yukoni",
   "version": "1.0.0",
-  "description": "Free E-commerce plateform",
+  "description": "Yukoni [MERN Stack Project Template]",
   "main": "index.js",
   "scripts": {
     "start": "nodemon --use_strict index.js",
@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vladimirponomarev/authentication-in-react-apps.git"
+    "url": "https://github.com/Yukoni/Yukoni.git"
   },
-  "author": "Umar Abbas",
+  "author": "Umar Abbas [omer.ith@gmail.com]",
   "license": "MIT",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
