@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const passport =require('passport');
-const config =require('./server/config');
+const config =require('./config');
 
 require('./server/models').connect(config.dbUri);
 const app = express();
