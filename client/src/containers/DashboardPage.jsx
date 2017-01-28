@@ -1,6 +1,6 @@
 import React from 'react';
-import Auth from '../modules/Auth';
-import Dashboard from '../components/Dashboard.jsx';
+import Auth from '../helper/Auth';
+import Dashboard from '../components/Account/Dashboard.jsx';
 
 
 class DashboardPage extends React.Component {

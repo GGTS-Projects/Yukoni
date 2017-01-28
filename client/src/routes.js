@@ -1,9 +1,9 @@
-import Base from './components/Base.jsx';
-import HomePage from './components/HomePage.jsx';
+import Base from './components/Layout/Layout.jsx';
+import HomePage from './components/Home/HomePage.jsx';
 import DashboardPage from './containers/DashboardPage.jsx';
 import LoginPage from './containers/LoginPage.jsx';
 import SignUpPage from './containers/SignUpPage.jsx';
-import Auth from './modules/Auth';
+import Auth from './helper/Auth';
 
 
 const routes = {
