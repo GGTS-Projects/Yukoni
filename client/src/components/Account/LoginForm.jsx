@@ -1,8 +1,7 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
-import { Card, CardText } from 'material-ui/Card';
-import RaisedButton from 'material-ui/RaisedButton';
-import TextField from 'material-ui/TextField';
+import {Form,FormGroup,Col,FormControl,ControlLabel,Checkbox,Button} from 'react-bootstrap';
+
 
 
 const LoginForm = ({
@@ -12,41 +11,44 @@ const LoginForm = ({
   successMessage,
   user
 }) => (
-  <Card className="container">
-    <form action="/" onSubmit={onSubmit}>
-      <h2 className="card-heading">Login</h2>
-
-      {successMessage && <p className="success-message">{successMessage}</p>}
+  
+  <div className="container">  
+   <Form action="/" onSubmit={onSubmit} horizontal>
+   {successMessage && <p className="success-message">{successMessage}</p>}
       {errors.summary && <p className="error-message">{errors.summary}</p>}
+    <FormGroup controlId="formHorizontalEmail">
+      <Col componentClass={ControlLabel} sm={2}>
+        Email
+      </Col>
+      <Col sm={10}>
+        <FormControl type="email" placeholder="Email" />
+      </Col>
+    </FormGroup>
 
-      <div className="field-line">
-        <TextField
-          floatingLabelText="Email"
-          name="email"
-          errorText={errors.email}
-          onChange={onChange}
-          value={user.email}
-        />
-      </div>
+    <FormGroup controlId="formHorizontalPassword">
+      <Col componentClass={ControlLabel} sm={2}>
+        Password
+      </Col>
+      <Col sm={10}>
+        <FormControl type="password" placeholder="Password" />
+      </Col>
+    </FormGroup>
 
-      <div className="field-line">
-        <TextField
-          floatingLabelText="Password"
-          type="password"
-          name="password"
-          onChange={onChange}
-          errorText={errors.password}
-          value={user.password}
-        />
-      </div>
+    <FormGroup>
+      <Col smOffset={2} sm={10}>
+        <Checkbox>Remember me</Checkbox>
+      </Col>
+    </FormGroup>
 
-      <div className="button-line">
-        <RaisedButton type="submit" label="Log in" primary />
-      </div>
-
-      <CardText>Don't have an account? <Link to={'/signup'}>Create one</Link>.</CardText>
-    </form>
-  </Card>
+    <FormGroup>
+      <Col smOffset={2} sm={10}>
+        <Button type="submit">
+          Sign in
+        </Button>
+      </Col>
+    </FormGroup>
+  </Form>
+  </div>
 );
 
 LoginForm.propTypes = {
