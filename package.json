@@ -17,6 +17,8 @@
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
+    "express-validation": "^1.0.1",
+    "griddle-react": "^0.7.1",
     "jsonwebtoken": "^7.2.1",
     "material-ui": "^0.16.6",
     "mongoose": "^4.7.3",

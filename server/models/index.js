@@ -13,4 +13,5 @@ module.exports.connect = (uri) => {
 
   // load models
 require('./User');
+require('./Post');
 }
